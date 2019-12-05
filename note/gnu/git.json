@@ -1,0 +1,36 @@
+{
+"git.json":"fd",
+"update": [{
+	"normal":[
+		"git add .",
+		"git commit -m <alter>",
+		"git push"
+	]},{
+	"least update":"git clone <url> --depth 1"
+	},{
+	"update from remote to local":[
+		"git fetch origin master //从远程的origin仓库的master分支下载代码到本地的origin master",
+		"git log -p master.. origin/master//比较本地的仓库和远程参考的区别",
+	"git merge origin/master//把远程下载下来的代码合并到本地仓库，远程的和本地的合并"
+
+	]
+	}
+],
+
+"user.name and user.email": [
+	"git config --global user.name 'Pluto'",
+	"git config --global user.email '210214599@qq.com'"
+],
+"check":[
+	{"git remote -v":"查看远程仓库地址命令"},
+	{"git branch -a":"查看远程分支"},
+	{"git branch"	:"查看本地分支"}
+],
+"#error": [{
+	"fatal: refusing to merge unrelated histories": "两个 根本不相干的 git 库， 一个是本地库， 一个是远端库， 然后本地要去推送到远端， 远端觉得这个本地库跟自己不相干， 所以告知无法合并"},{
+	"failed to push some refs to 'git@github.com:xxx/xxx.git'":[
+		"git pull --rebase origin master",
+		"git push -u origin master"
+	]}
+]
+}

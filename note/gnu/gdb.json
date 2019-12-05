@@ -1,0 +1,7 @@
+{
+"set follow-fork-mode <parent/child> ":
+	"这条命令可以用于在调试父进程或是子进程的模式之间进行切换。例如在fork函数执行之前执行set follow-fork-mode child, 当fork执行后，设定在子进程上的断点将会有效，而父进程上的断点此时无效；反之依然。缺省gdb是调试主进程的。",
+"attach<pid>":
+	"GDB有附着（attach）到正在运行的进程的功能，即attach <pid>命令。因此我们可以利用该命令attach到子进程然后进行调试。"
+}
+

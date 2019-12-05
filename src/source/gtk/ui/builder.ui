@@ -1,0 +1,11 @@
+<interface>
+	<object class="GtkBox" id="box_sub">
+		<property name="orientation">GTK_ORIENTATION_VERTICAL</property>
+		<child>
+    <object class="GtkButton" id="picture">
+      <property name="label">picture</property>
+    </object>
+		</child>
+	</object>
+</interface>
+

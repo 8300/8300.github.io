@@ -49,4 +49,10 @@ int main()
 			"<a href='%s'>%.2d.%s</a>");
 	html_create("sub.html", "../src/cad/index.html", "../src/cad/",
 			"<a href='%s'>%.2d.%s</a>");
+	html_create("sub.html", "../note/gnu/index.html", "../note/gnu/",
+			"<a href='%s'>%.2d.%s</a>");
+	html_create("sub.html", "../src/source/index.html", "../src/source/",
+			"<a href='%s'>%.2d.%s</a>");
+	html_create("sub.html", "../src/source/gtk/expander/index.html", "../src/source/gtk/expander/",
+			"<img src='%s'>%.2d.%s</a>");
 }
