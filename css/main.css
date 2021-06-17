@@ -1,0 +1,81 @@
+	body {
+	height: 100px;
+	background:#dddddd;
+	}
+	/*div_left通用样式*/
+	div_left{
+	background: #000000;
+	color:#000000;
+	overflow: hidden;
+	z-index: 9999;
+	position: fixed;
+	padding:5px;
+	text-align:center;
+	width: 175px;
+	height: 22px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	}
+	div_left.left_top{
+	width: 4%;
+	height: 100%;
+	left: 1%;
+	top: 1%;
+	}
+
+	div_middle{
+		background: dimgray;
+		color:#ffffff;
+		margin: 2% 2% 2% 8%;
+		display: flex;
+		flex-direction:column;
+		justify-content: left;
+	}
+	div_row{
+		background: white;
+		color:#ffffff;
+		display: flex;
+		flex-direction:row;
+		justify-content: left;
+	}
+	div_column{
+		background: white;
+		color:#ffffff;
+		margin: 2% 2% 2% 0%;
+		display: flex;
+		flex-direction:column;
+		justify-content: left;
+	}
+	div_column.video{
+		margin: 2% 2% 2% 8%;
+		width: 90%;
+		background:#00ffff;
+	}
+	div_column.list{
+		width: 20%;
+		margin: 0% 2% 0% 8%;
+		background:#00ffff;
+	}
+
+	div_middle_row{
+		background: dimgray;
+		color:#ffffff;
+		margin: 2% 2% 40% 2%;
+		display: flex;
+		flex-direction:row;
+		justify-content: left;
+	}
+
+	div_middle_row.left{
+		width: 20%;
+		background:#00ffff;
+		height: 50%;
+	}
+	div_middle_row.right{
+		margin: 2% 2% 40% 2%;
+		width: 80%;
+		background:#ff00ff;
+		height: 50%;
+	}

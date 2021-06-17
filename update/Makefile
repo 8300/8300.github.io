@@ -1,4 +1,5 @@
-main: index_main.c
-	$(CC) $^ -o $@
-sub: index_sub.c
-	$(CC) $^ -o $@
+target := update
+$(target): update.c
+	$(CC) -g $^ -o $@
+clean:
+	rm $(target)
