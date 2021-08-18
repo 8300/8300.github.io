@@ -11,42 +11,41 @@
 </head>
 
 <body >
-
-	<div_left class="left_top">
-		<a href="https://8300.github.io/index.html">
-			<button class="button">8300主页</button>
-		</a>
-		<br>
-		<a href="blog/index.html">
-			<button class="button">技术</button>
-		</a>
-		<br>
-		<a href="manual/index.html">
-			<button class="button">手册</button>
-		</a>
-		<br>
-		<a href="software/index.html">
-			<button class="button">软件</button>
-		</a>
-		<br>
-		<a href="audio/index.html">
-			<button class="button">音频</button>
-		</a>
-		<br>
-		<a href="video/index.html">
-			<button class="button">视频</button>
-		</a>
-		<br>
-		<a href="company/index.html">
-			<button class="button">公司</button>
-		</a>
-		<br>
-		<a href="about/index.html">
-			<button class="button">关于</button>
-		</a>
-		<br>
-	</div_left>
-	<div_middle>
+	<div style="position:fixed; width:16%; height:100%; background:gray;">
+<div id="technology" style="color:blue;" onclick="document.all.technology_child.style.display=(document.all.technology_child.style.display =='none')?'':'none'" >
+	+ 技术 </div>
+<div id="technology_child"  style="display:''; padding-left:2em;">
+	<a href="https://8300.github.io/technology/mechine/index.html">机械工程</a> <br>
+	<a href="https://8300.github.io/technology/hardware/index.html">电子电路</a> <br>
+	<a href="https://8300.github.io/technology/software/index.html">软件编程</a> <br>
+	<a href="https://8300.github.io/technology/manual/index.html">官方手册</a> <br>
+</div>
+<div id="main2" style="color:blue" onclick="document.all.child2.style.display=(document.all.child2.style.display =='none')?'':'none'" >
+	+ 生活 </div>
+<div id="child2"  style="display:''; padding-left:2em;">
+	<a href="https://8300.github.io/life/audio/index.html">音乐</a> <br>
+	<a href="https://8300.github.io/life/video/index.html">视频</a> <br>
+	<a href="https://8300.github.io/life/deal/index.html">买卖</a> <br>
+</div>
+<div id="tool" style="color:blue" onclick="document.all.tool_child.style.display=(document.all.tool_child.style.display =='none')?'':'none'" >
+	+ 在线工具 </div>
+<div id="tool_child"  style="display:''; padding-left:2em;">
+	<a href="https://8300.github.io/tool/calculator/index.html">计算器</a><br>
+</div>
+<div>
+	<a href="https://8300.github.io/software/index.html">常用软件</a><br>
+</div>
+<div>
+	<a href="https://8300.github.io/company/index.html">公司主页</a><br>
+</div>
+<div>
+	<a href="https://8300.github.io/personal/index.html">个人主页</a><br>
+</div>
+<div>
+	<a href="https://8300.github.io/about/index.html">关于</a><br>
+</div>
+	</div>
+	<div style="margin:2% 2% 2% 16%; display:flex;">
 		<iframe src="index.htm" height=1000px />
-	</div_middle>
+	</div>
 </body>
