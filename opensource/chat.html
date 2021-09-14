@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<h1>chat.html</h1>
+<p style="white-space:pre-wrap">
+
+基础函数库：https://gitee.com/bef/source.git
+程序实例库：https://gitee.com/bef/example.git
+聊天软件开发：example/chat_client example/chat_server
+	简介：完全使用纯C语言开发，主要开源库：gtk、sqlite、json
+	现状：
+		登陆界面：登录完成，注册未开发
+		关系界面：联系人列表完成，并可跳转至聊天界面。添加人开发一半
+		聊天界面：收发消息完成。多人聊天未开发
+	安装：cp bin/debian/chat_client <remote_path>
+		sudo vi /etc/apt/sourse.list
+		deb https://mirrors.aliyun.com/debian  stable main contrib non-free	
+		deb https://mirrors.aliyun.com/debian  stable-updates main contrib non-free
+		deb http://security.debian.org/debian-security bullseye-security main contrib
+		deb-src http://security.debian.org/debian-security bullseye-security main contrib
+		sudo apt update
+		sudo apt install libjson-c-dev
+
+
+</p>
