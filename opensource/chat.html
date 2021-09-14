@@ -14,6 +14,15 @@
 		登陆界面：登录完成，注册未开发
 		关系界面：联系人列表完成，并可跳转至聊天界面。添加人开发一半
 		聊天界面：收发消息完成。多人聊天未开发
+		群功能  :
+			{12}创建：main(new object:type(group),main_id(12)) network_12(new object)	id:77
+			解散：main(delete) network_12(delete)
+			群管理添人：network_77(new object)
+			群管理删人：network_77(delete object)
+			陌生人申请：main(select main_id where type=group)->get_fd->send request ->confirm->network_77(add)
+			成员退出：network_77(delete object)
+			聊天：msg_77 
+			群成员上线:network_77 status=online
 	安装：cp bin/debian/chat_client <remote_path>
 		sudo vi /etc/apt/sourse.list
 		deb https://mirrors.aliyun.com/debian  stable main contrib non-free	
